@@ -1,0 +1,576 @@
+/* .navbar-brand{
+    font-family: 'Bungee', cursive;
+} */
+/* section{
+    height: 100vh;
+    background-image: url(https://www.thestatesman.com/wp-content/uploads/2018/07/tree.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+#google_element select{
+    background: #363d4e;
+    color:#ffffff;
+    border: none;
+    border-radius:3px;
+    padding:7px 19px
+    }
+    
+    /*google translate link | logo */
+      .goog-logo-link{
+      display:none!important;
+      }
+    .goog-te-gadget{
+    font-size: 0px!important;
+    color:transparent!important;
+    }
+    .goog-te-gadget .goog-te-combo{
+        margin: -8px 0 !important;
+    }
+
+    @media screen and (max-width: 768px) {
+        .goog-te-gadget .goog-te-combo{
+            margin: 6px 0 !important;
+        }
+        
+    }
+    @media screen and (max-width: 768px){
+        .goog-te-combo, .goog-te-banner *, .goog-te-ftab *, .goog-te-menu *, .goog-te-menu2 *, .goog-te-balloon *{
+            font-family: sans-serif !important;
+            font-size: 13pt !important;
+        }
+    }
+    
+    
+    /* google translate banner-frame */
+    
+    .goog-te-banner-frame{
+    display:none !important;
+    }
+    .goog-te-combo, .goog-te-banner *, .goog-te-ftab *, .goog-te-menu *, .goog-te-menu2 *, .goog-te-balloon *{
+        font-family: sans-serif !important;
+        font-size: 11pt !important;
+    }
+
+    #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+   .goog-text-highlight { background: none !important; box-shadow: none !important;}
+    
+    body{top:0!important;}
+    
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+#snow-fall{
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.thestatesman.com/wp-content/uploads/2018/07/tree.jpg);
+}
+.particles-js-canvas-el{
+    position: absolute;
+}
+/* section{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background: #262626; 
+    background-image: url(https://www.thestatesman.com/wp-content/uploads/2018/07/tree.jpg);
+} */
+.logo-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 3px;
+}
+nav {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    /* height: 60px; */
+    padding: 0 1.5em;
+    background-color: #24262b;
+    /* background: linear-gradient(180deg, #242F54 0%, #243257 28.65%, #23385D 59.9%, #214067 82.29%, #1F4E76 99.99%, #1C628B 100%); */
+    /* font-family: 'Bungee', cursive; */
+    font-family: sans-serif;
+    box-shadow: 0 0 15px black;
+}
+nav .logo {
+    font-size: 1.25em;
+    line-height: 70px;
+    font-weight: normal;
+    color: #fff;
+    font-family: 'Bungee', cursive;
+}
+
+nav .nav-menu {
+    position: absolute;
+    right: 1.5em;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav .nav-item {
+    display: inline-block;
+}
+
+nav .nav-item>a {
+    display: inline-block;
+    padding: 0 1.5em;
+    line-height: 70px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropdown a::after {
+    content: '';
+    display: inline-block;
+    margin-left: .5em;
+    vertical-align: middle;
+    border-top: .3em solid #fff;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+}
+
+nav .dropdown.show a::after {
+    transform: rotate(180deg);
+}
+
+nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: .5em 0;
+    margin-top: -.5em;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: .5em;
+    background-color: #fff;
+}
+
+nav .dropdown.show .dropdown-menu {
+    display: block;
+}
+
+nav .dropdown-item {
+    display: block;
+    padding: 0 1.5em;
+    font-size: .875em;
+    color: #000;
+    line-height: 3;
+    text-decoration: none;
+}
+
+nav .btn-hamburger {
+    display: none;
+    position: absolute;
+    right: 1.5em;
+    top: 50%;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transform: translateY(-50%);
+}
+
+nav .btn-hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px;
+    border-radius: 2px;
+    transition: .3s ease-in-out;
+}
+
+nav .btn-hamburger span:nth-child(4),
+nav .btn-hamburger span:nth-child(5) {
+    position: absolute;
+    top: 10px;
+    opacity: .5;
+}
+
+nav .btn-hamburger span:nth-child(4) {
+    transform: rotate(45deg) scale(0);
+}
+
+nav .btn-hamburger span:nth-child(5) {
+    transform: rotate(-45deg) scale(0);
+}
+
+nav.opened .btn-hamburger span:nth-child(4) {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+}
+
+nav.opened .btn-hamburger span:nth-child(5) {
+    opacity: 1;
+    transform: rotate(-45deg) scale(1);
+}
+
+nav.opened .btn-hamburger span:nth-child(1),
+nav.opened .btn-hamburger span:nth-child(2),
+nav.opened .btn-hamburger span:nth-child(3) {
+    opacity: 0;
+}
+@media screen and (max-width: 768px) {
+    nav .nav-menu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 70px;
+        bottom: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background-color: #363d4e;
+        transition: bottom .5s ease-in-out;
+        overflow: hidden;
+    }
+    nav.opened .nav-menu {
+        bottom: 0;
+    }
+    nav .nav-item>a {
+        display: block;
+    }
+    nav .dropdown-menu {
+        position: relative;
+        top: 0;
+        margin: 0 1.5em;
+    }
+    nav .btn-hamburger {
+        display: block;
+    }
+}
+.d-inline-block{
+    margin-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 1px;
+}
+#title{
+    background-color: #242F54 ;
+}
+.cards {
+    padding: 50px;
+    max-width: 960px;
+    margin: 0 auto 30px;
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.article-img {
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}
+
+article {
+    position: relative;
+}
+.article-title {
+    border-radius: 0px 0px 20px 20px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: revert;
+    vertical-align: baseline;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 250, 240, 0.568);
+}
+.row {
+    color: white;
+    position: relative;
+    /* z-index: 1; */
+    /* margin-top: 50px; */
+    padding: 5%;
+    /* min-height: 100%; */
+    
+    
+}
+
+.row1{
+    margin: auto;
+}
+.season-heading{ 
+    text-shadow: 0px 0px 10px black ;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    margin-top: 100px;
+    font-family: 'Aclonica', sans-serif;
+    /* font-size: 50px; */
+    font-size: 10vw;
+}
+.head-content{
+    text-decoration: 0px 0px 10px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    /* font-size: large;
+    font-weight: revert; */
+}
+
+
+@media screen and (min-width: 601px) {
+    .season-heading {
+      font-size: 6vw;
+    }
+  }
+.btn{
+
+    /* width: 10vw;
+    height: 4.5vw; */
+    color: white;
+    /* margin-left:40%; */
+    margin-left: 185px;
+    margin-top: 10px;
+    border-radius: 15px;
+    
+}
+
+.btn-info{
+    background-color: #1741b8;
+    border-color: black;
+    
+}
+/* .btntext{
+    font-size: 1.5vw;
+} */
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-center {
+    text-align: center;
+  }
+
+.col-lg-6{
+    width: 100%;
+    height: auto;
+}
+p{  
+    margin-top: 50px;
+    color: white;
+}
+
+
+/* ul{
+    color: white;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/*adding background to section
+and animation named color-change*/
+/* section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(
+       https://www.thestatesman.com/wp-content/uploads/2018/07/tree.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: color-change 10s linear infinite;
+    animation-delay: 1s;
+} */
+/*adding rain img and making opacity 0*/
+/* section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(
+        https://www.linkpicture.com/q/pngaaa.com-63912.png);
+    animation: rain 0.4s linear infinite;
+    opacity: 0;
+} */
+/* just changing the position of image 
+of rain using keyframes*/
+/* @keyframes rain {
+    0% {
+        background-position: 0 0;
+        opacity: 1;
+    }
+
+    100% {
+        background-position: 8% 80%;
+        opacity: 1;
+    }
+} */
+/* applying filter at different angle
+on diffrent interval using keyframe*/
+/* @keyframes color-change {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    } */
+
+
+
+
+
+    /* .snowflake {
+        color: #fff;
+        font-size: 1em;
+        font-family: Arial;
+        text-shadow: 0 0 1px #000;
+      }
+      
+      @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+      /* Demo Purpose Only*/
+      /* .demo {
+        font-family: 'Raleway', sans-serif;
+          color:#fff;
+          display: block;
+          margin: 0 auto;
+          padding: 15px 0;
+          text-align: center;
+      }
+      .demo a{
+        font-family: 'Raleway', sans-serif;
+      color: #000;		
+      } */ 
+
+
+
+
+      
+
+      
+
+
+      
